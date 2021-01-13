@@ -39,8 +39,10 @@ switch pars.what2mod
         std = get(hObj,'Value');
     case 'new_evaluation'
         Xnew = pars.specs.xmin + (pars.specs.xmax - pars.specs.xmin) * rand();
-        get_parabola_value = construct_parabola_saturated(pars.GP.hyp);
-        Ynew = get_parabola_value(Xnew);
+        % get_parabola_value = construct_parabola_saturated(pars.GP.hyp);
+        % Ynew = get_parabola_value(Xnew);
+        get_function_value = construct_discontinuity(pars.GP.hyp);
+        Ynew = get_function_value(Xnew);
         
         % Update global variable:
         X = [X;Xnew];

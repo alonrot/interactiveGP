@@ -37,7 +37,8 @@ function [fig_hdl,axes_hdl] = initialize_plots(in)
     xlabel('x_*','interpreter','tex');
     ylabel('f(x_*) | y','interpreter','tex');
     xlim([in.xmin in.xmax]);
-    ylim([-20 120]);
+    % ylim([-20 120]); % parabola
+    ylim([-40 120]); % discontinuity
     
 
 end

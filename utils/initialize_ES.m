@@ -52,8 +52,8 @@ function specs = initialize_ES()
         specs.GP        = initialize_GP(specs);
         
 	% Function:
-        specs.f         = construct_parabola_saturated(specs.GP.hyp);
-%         specs.f         = construct_discontinuity(specs.GP.hyp);
+        % specs.f         = construct_parabola_saturated(specs.GP.hyp);
+        specs.f         = construct_discontinuity(specs.GP.hyp);
         
 	% Get underlying function:
         specs.f_true    = specs.f(specs.z_plot);
