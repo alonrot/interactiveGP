@@ -5,7 +5,7 @@ With this interactive tool, one can directly see the impact of hyperparameter ch
 
 The tool builds on top of the [GPML library](http://www.gaussianprocess.org/gpml/code/matlab/doc/) and provides insight on two different covariance functions: Squared exponential (SE) and rational quadratic (RQ). See [this nice post from David Duvenaud](https://www.cs.toronto.edu/~duvenaud/cookbook/) for a brief description of the SE and RQ covariance functions, and see [Gaussian Processes for Machine Learning, Section 4.2](http://www.gaussianprocess.org/gpml/chapters/) for a detailed overview of popular covariance functions.
 
-This tool was designed and tested on MATLAB R2017a.
+This tool was designed and tested on `MATLAB R2017a`.
 
 Running the code
 ================
